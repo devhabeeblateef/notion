@@ -1,6 +1,6 @@
 import classes from './CSS/App.module.css';
 import './App.css';
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Search from './Search';
 import Filter from './Filter';
 import Data from './Data';
@@ -50,13 +50,13 @@ function App() {
             {
                 return val
             }
-           }).map((item, key) => {
-            if (key%5 === 0 && searchTerm === "")
+          }).map((item, key) => {
+            if (key%5 == 0 && searchTerm === "")
             {
             return (
               <div>
               <h5 className={classes.data}>{MOCKDATA[key].date}</h5>
-            <Data date={MOCKDATA[key].date} key={key} imageURL={item.item_image}
+            <Data key={key} imageURL={item.item_image}
             title={item.item_name}
             desc={item.item_description}  
             /> 

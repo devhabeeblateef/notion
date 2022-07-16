@@ -50,13 +50,17 @@ function App() {
             {
                 return val
             }
+            else if (val.item_name.toLowerCase().includes(`A-Za`)
+            {
+              return <p>No result found</p>
+            }
            }).map((item, key) => {
             if (key%5 === 0 && searchTerm === "")
             {
             return (
               <div>
               <h5 className={classes.data}>{MOCKDATA[key].date}</h5>
-            <Data date={MOCKDATA[key].date} key={key} imageURL={item.item_image}
+            <Data key={key} imageURL={item.item_image}
             title={item.item_name}
             desc={item.item_description}  
             /> 

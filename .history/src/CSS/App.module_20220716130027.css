@@ -1,0 +1,29 @@
+.search
+{
+    background-color: rgb(235, 233, 233);
+    color: #2b2b2b;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.filter__button
+{
+    border: none;
+    margin: 0 30px;
+    border-radius: 20px;
+    width: 10%;
+    height: 30px;
+    background-color: #4c62ac;
+    color: #fff;
+}
+
+.data
+{
+    text-align: left;
+    margin: 40px 80px;
+}
